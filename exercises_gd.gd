@@ -23,7 +23,7 @@ func gain_gold(amount):
 	print("You have " + str(current_gold) + " gold.")
 
 
-# Improvement: Make the current_gold variable a member variable of a node so it can be used inside any scene or attached to a node. Just declaring it like i did allows the variable to be used only at a global level.
+# Improvement: Make the current_gold variable a member variable of a node so it can be used inside any scene or attached to a node. Just declaring it like I did allows the variable to be used only at a global level.
 
 # Added Line on top of the code:
 
@@ -68,7 +68,7 @@ var bestiary = {
 print(str(bestiary[0] "attack"))
 
 
-# Mistakes: I tried to access the key "Slime" on the dictionary by using its index number, like it was an array. It doesn't work because dictionaries doesn't have fixed index for its keys.
+# Mistakes: I tried to access the key "Slime" on the dictionary by using its index number, like it was an array. It doesn't work because dictionaries doesn't have fixed indexes for its keys.
 # I also forgot to use the [] to access the key "attack".
 
 # Fixed Line:
@@ -87,7 +87,7 @@ func attack(enemy_name: string):
 	print(enemies[enemy_name] + " has " + str(enemies[enemy_name] ["hp"]) + " HP."
 
 
-# Mistakes: On the print function I tried to concatenate enemies[enemy_name] with " has ". It's wrong because it's not possible to concatenate a dictionary with a string. I should've just used enemy_name, then it would word since both values are strings.
+# Mistakes: On the print function I tried to concatenate enemies[enemy_name] with " has ". It's wrong because it's not possible to concatenate a dictionary with a string. I should've just used enemy_name, then it would work since both values are strings.
 
 # Fixed Line:
 
@@ -101,7 +101,7 @@ func on_button_pressed():
 	Global.game_state = "talking"
 
 
-# Feedback: It's simple and clean, but I had to  cheat since I wasn't familiar with the Global.game_state variable.
+# Feedback: It's simple and clean, but I had to cheat since I wasn't familiar with the Global.game_state variable.
 
 
 # Exercise 8: Inventory Tracker
@@ -202,7 +202,7 @@ func talk_to(npc_name: string):
 	"Carl":
 		print("Carl: Good afternoon!")
 	_:
-
+		print("...")
 
 # Mistakes: I didn't use the correct indentation on the lines inside the match statement.
 
